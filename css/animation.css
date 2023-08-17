@@ -5,14 +5,15 @@
 
 .typing-animation h1:nth-child(1) {
   width: 100%;
-  animation: type 0.3s steps(5, end);
+  opacity: 0;
+  animation: type 2s steps(20, end);
   animation-fill-mode: forwards;
 }
 
 .typing-animation h1:nth-child(2) {
   width: 100%;
   opacity: 0;
-  animation: type 1s steps(20, end);
+  animation: type 2s steps(20, end);
   animation-delay: 0.8s;
   animation-fill-mode: forwards;
 }
@@ -20,7 +21,7 @@
 .typing-animation h1:nth-child(3) {
   width: 100%;
   opacity: 0;
-  animation: type 1s steps(19, end);
+  animation: type 2s steps(19, end);
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
