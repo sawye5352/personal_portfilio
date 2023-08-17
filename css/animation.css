@@ -6,7 +6,7 @@
 .typing-animation h1:nth-child(1) {
   width: 100%;
   opacity: 0;
-  animation: type 2s steps(30, end);
+  animation: type 3s steps(20, end);
   animation-fill-mode: forwards;
 }
 
@@ -14,7 +14,7 @@
   width: 100%;
   opacity: 0;
   animation: type 2s steps(20, end);
-  animation-delay: 0.8s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
