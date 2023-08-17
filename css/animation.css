@@ -6,8 +6,8 @@
 .typing-animation h1:nth-child(1) {
   width: 100%;
   opacity: 0;
-  animation: type 2s steps(20, end);
-  animation-delay: 1s
+  animation: type 1.5s steps(20, end);
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
@@ -22,7 +22,7 @@
 .typing-animation h1:nth-child(3) {
   width: 100%;
   opacity: 0;
-  animation: type 2s steps(19, end);
+  animation: type 1s steps(19, end);
   animation-delay: 3s;
   animation-fill-mode: forwards;
 }
@@ -39,32 +39,3 @@
   }
 }
 
-@media (max-width: 800px) {
-  .introduction-container {
-    padding: 0 2rem;
-    justify-content: center;
-    align-items: center;
-  }
-  .greeting-heading,
-  .greeting-paragraph,
-  .greeting-photo {
-    text-align: center;
-    padding: 1rem 0;
-  }
-}
-
-@media (max-width: 1000px) {
-  .greeting-photo {
-    padding: 4.5rem;
-  }
-}
-
-.my-skills-heading,
-.my-education-heading {
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 97.2%;
-  letter-spacing: -1.8px;
-  padding: 0 4.5rem 3rem 4.5rem;
-}

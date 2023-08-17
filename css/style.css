@@ -143,21 +143,21 @@ nav a {
   line-height: 2.5rem;
   letter-spacing: -0.96px;
   margin-top: 8rem;
-  padding-right: 8rem;
+  padding-right: 7rem;
 }
-
 
 @media (max-width: 800px) {
   .introduction-container {
-    padding: 0 2rem;
+    padding: 0 3rem;
     justify-content: center;
     align-items: center;
   }
   .greeting-heading,
   .greeting-paragraph,
   .greeting-photo {
+    font-size: 24px;
     text-align: center;
-    padding: 1rem 0;
+    padding: 0;
   }
 }
 
@@ -189,9 +189,12 @@ nav a {
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
-  padding: 0 4.5rem 4.5rem 4.5rem;
   line-height: 121.5%;
   letter-spacing: -0.96px;
+}
+
+.skill-names ul{
+  padding: 0.1rem;
 }
 
 .skill-levels {
@@ -199,30 +202,37 @@ nav a {
   font-family: poppins;
   font-style: normal;
   font-weight: 250;
-  padding: 0 4.5rem 4.5rem 4.5rem;
   line-height: 121.5%;
   letter-spacing: -0.96px;
+}
+
+.skill-levels ul{
+  padding: 0.1rem;
 }
 
 .skill-stars {
   font-size: 28px;
   font-style: normal;
-  font-weight: 250;
-  padding: 0 4.5rem 4.5rem 4.5rem;
   line-height: 121.5%;
   letter-spacing: -0.96px;
 }
 
+.skill-stars i{
+  padding: 0.2rem;
+}
+
 @media (max-width: 800px) {
   .my-skills-container {
-    flex: 100%;
-    padding: 0 4.5rem;
+    width: 100%;
   }
   .skill-names,
   .skill-stars {
-    font-size: 16px;
+    font-size: 8px;
     padding: 0;
     flex: 50%;
+  }
+  .skill-stars i{
+    padding: 0.2rem 0;
   }
   .skill-levels {
     display: none;
