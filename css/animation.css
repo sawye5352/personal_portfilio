@@ -1,0 +1,68 @@
+.typing-animation h1 {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typing-animation h1:nth-child(1) {
+  width: 100%;
+  animation: type 0.3s steps(5, end);
+  animation-fill-mode: forwards;
+}
+
+.typing-animation h1:nth-child(2) {
+  width: 100%;
+  opacity: 0;
+  animation: type 1s steps(20, end);
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.typing-animation h1:nth-child(3) {
+  width: 100%;
+  opacity: 0;
+  animation: type 1s steps(19, end);
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .introduction-container {
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .greeting-heading,
+  .greeting-paragraph,
+  .greeting-photo {
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .greeting-photo {
+    padding: 4.5rem;
+  }
+}
+
+.my-skills-heading,
+.my-education-heading {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 97.2%;
+  letter-spacing: -1.8px;
+  padding: 0 4.5rem 3rem 4.5rem;
+}

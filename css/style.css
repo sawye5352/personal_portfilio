@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+.section-seperator {
+  width: 100%;
+  background-color: black;
+  height: 1px;
+  margin: 100px 0;
+}
+
+.home-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 2% 6%;
+  text-align: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.home-nav ul li {
+  flex: 50%;
+  text-align: left;
+  list-style: none;
+  display: inline-block;
+}
+
+.home-nav ul li::after {
+  content: "";
+  height: 3px;
+  background: #f9ba5a;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.home-nav ul li:hover::after {
+  width: 100%;
+  height: 5px;
+}
+
+.projects-nav ul li {
+  flex: 50%;
+  text-align: left;
+  list-style: none;
+  display: inline-block;
+}
+
+.projects-nav ul li::after {
+  content: "";
+  height: 0.02px;
+  background: #f9ba5a;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.projects-nav ul li:hover::after {
+  width: 100%;
+  height: 5px;
+}
+
+.about-nav ul li {
+  flex: 50%;
+  text-align: left;
+  list-style: none;
+  display: inline-block;
+  margin-bottom: -1em;
+}
+
+.about-nav ul li::after {
+  content: "";
+  height: 0.01px;
+  background: #f9ba5a;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.about-nav ul li:hover::after {
+  width: 100%;
+  height: 5px;
+}
+
+@media (max-width: 800px) {
+  .home-nav,
+  .projects-nav,
+  .about-nav {
+    flex: 100%;
+    padding: 0.1rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .projects-nav {
+    margin-left: 30rem;
+  }
+}
+
+.introduction-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.greeting {
+  flex: 50%;
+  flex-direction: column;
+}
+
+.greeting-heading {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.96px;
+}
+
+.greeting-paragraph {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: -0.96px;
+  margin-top: 8rem;
+  padding-right: 8rem;
+}
+
+
+@media (max-width: 800px) {
+  .introduction-container {
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .greeting-heading,
+  .greeting-paragraph,
+  .greeting-photo {
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .greeting-photo {
+    padding: 4.5rem;
+  }
+}
+
+.my-skills-heading,
+.my-education-heading {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 97.2%;
+  letter-spacing: -1.8px;
+  padding: 0 4.5rem 3rem 4.5rem;
+}
+
+.my-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.skill-names {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 0 4.5rem 4.5rem 4.5rem;
+  line-height: 121.5%;
+  letter-spacing: -0.96px;
+}
+
+.skill-levels {
+  font-size: 28px;
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 250;
+  padding: 0 4.5rem 4.5rem 4.5rem;
+  line-height: 121.5%;
+  letter-spacing: -0.96px;
+}
+
+.skill-stars {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 250;
+  padding: 0 4.5rem 4.5rem 4.5rem;
+  line-height: 121.5%;
+  letter-spacing: -0.96px;
+}
+
+@media (max-width: 800px) {
+  .my-skills-container {
+    flex: 100%;
+    padding: 0 4.5rem;
+  }
+  .skill-names,
+  .skill-stars {
+    font-size: 16px;
+    padding: 0;
+    flex: 50%;
+  }
+  .skill-levels {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .skill-names,
+  .skill-levels,
+  .skill-stars {
+    font-size: 16px;
+  }
+}
+
+.education-container {
+  padding: 0 0 3rem 4.5rem;
+}
+
+.university-container {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.university-logo {
+  width: 64px;
+  height: 64px;
+}
+
+.university-content {
+  width: 100%;
+  padding: 0 2rem;
+  color: #000;
+  font-family: poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.education-grade {
+  display: flex;
+}
+
+.education-period {
+  font-weight: 200;
+}
+
+.education-status {
+  font-weight: 200;
+}
+
+@media (max-width: 800px) {
+  .university-content {
+    font-size: 16px;
+  }
+  .my-education-heading {
+    padding: 3rem;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3rem 0;
+  background: #fec978;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 121.5%;
+  letter-spacing: -0.96px;
+  margin: 0 0 0 7rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 10rem 0 0;
+}
+
+.email {
+  margin-right: 5rem;
+}
+
+.email .email-heading {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.5%;
+  letter-spacing: -0.6px;
+}
+
+.email .email-paragraph {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 121.5%;
+  letter-spacing: -0.48px;
+  padding: 1rem 0;
+}
+
+.email .email-paragraph a {
+  text-decoration: none;
+  color: black;
+}
+
+.phone .phone-heading {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.5%;
+  letter-spacing: -0.6px;
+}
+
+.phone .phone-paragraph {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 121.5%;
+  letter-spacing: -0.48px;
+  padding: 1rem 0;
+}
+
+.phone .phone-paragraph a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-left {
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .footer-right {
+    display: none;
+  }
+}
