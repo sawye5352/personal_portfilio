@@ -15,8 +15,9 @@
 .home-main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  width: 100%;
   padding: 2rem 6rem;
 }
 
@@ -225,14 +226,13 @@ nav a {
 
 @media (max-width: 800px) {
   .my-skills-container {
-    width: 150%;
+    width: 110%;
   }
   .skill-names,
   .skill-stars {
     font-size: 8px;
     padding: 0;
     flex: 50%;
-    border: 2px solid red;
   }
   .skill-stars i{
     padding: 0.2rem 0;
@@ -384,11 +384,13 @@ nav a {
 @media (max-width: 1200px) {
   .footer {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
   }
 
   .footer-left {
+    flex: 100%;
     text-align: center;
     padding: 0;
     margin: 0 auto;
