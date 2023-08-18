@@ -15,7 +15,7 @@
 .home-main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem;
 }
@@ -225,13 +225,14 @@ nav a {
 
 @media (max-width: 800px) {
   .my-skills-container {
-    width: 100%;
+    width: 150%;
   }
   .skill-names,
   .skill-stars {
     font-size: 8px;
     padding: 0;
     flex: 50%;
+    border: 2px solid red;
   }
   .skill-stars i{
     padding: 0.2rem 0;
@@ -272,7 +273,7 @@ nav a {
   font-weight: 400;
 }
 
-.education-grade {
+.education-grade-container {
   display: flex;
 }
 
@@ -290,6 +291,14 @@ nav a {
   }
   .my-education-heading {
     padding: 3rem;
+  }
+
+  .education-grade{
+    display: none;
+  }
+
+  .education-status{
+    font-weight: 600;
   }
 }
 
