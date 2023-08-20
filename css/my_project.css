@@ -31,7 +31,7 @@
 }
 
 .my-projects-main-heading h1 {
-  font-size: 60px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 500;
   line-height: 121.5%;
@@ -51,13 +51,13 @@
 }
 
 .project-contents-heading {
-  font-size: 32px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .project-contents-paragraph {
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   padding: 3rem 10rem 5rem 0;
@@ -79,29 +79,28 @@
   object-fit: contain;
 }
 
-
 @media (max-width: 1000px) {
-    .my-projects-main-heading h1{
-        font-size: 38px;
-        text-align: center;
-    }
-    .project {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-    .project-contents-heading,
-    .project-contents-paragraph,
-    .project-contents a{
-        text-align: center;
-        padding: 1rem;
-    }
-    .projects-contents,
-    .project-img {
-      flex: 90%;
-      width: 90%;
-      padding: 2rem;
-      margin: 0 auto;
-    }
+  .my-projects-main-heading h1 {
+    font-size: 38px;
+    text-align: center;
   }
+  .project {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .project-contents-heading,
+  .project-contents-paragraph,
+  .project-contents a {
+    text-align: center;
+    padding: 1rem;
+  }
+  .projects-contents,
+  .project-img {
+    flex: 90%;
+    width: 90%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+}

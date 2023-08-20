@@ -34,7 +34,8 @@ nav {
 nav a {
   color: black;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .home-nav ul li {
@@ -131,20 +132,20 @@ nav a {
 }
 
 .greeting-heading {
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.96px;
 }
 
 .greeting-paragraph {
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 2.5rem;
   letter-spacing: -0.96px;
   margin-top: 8rem;
-  padding-right: 7rem;
+  padding-right: 10rem;
 }
 
 @media (max-width: 800px) {
@@ -172,7 +173,7 @@ nav a {
 
 .my-skills-heading,
 .my-education-heading {
-  font-size: 60px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 600;
   line-height: 97.2%;
@@ -189,19 +190,19 @@ nav a {
 }
 
 .skill-names {
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 121.5%;
   letter-spacing: -0.96px;
 }
 
-.skill-names ul{
+.skill-names ul {
   padding: 0.1rem;
 }
 
 .skill-levels {
-  font-size: 28px;
+  font-size: 20px;
   font-family: poppins;
   font-style: normal;
   font-weight: 250;
@@ -209,18 +210,18 @@ nav a {
   letter-spacing: -0.96px;
 }
 
-.skill-levels ul{
+.skill-levels ul {
   padding: 0.1rem;
 }
 
 .skill-stars {
-  font-size: 28px;
+  font-size: 20x;
   font-style: normal;
   line-height: 121.5%;
   letter-spacing: -0.96px;
 }
 
-.skill-stars i{
+.skill-stars i {
   padding: 0.2rem;
 }
 
@@ -228,13 +229,18 @@ nav a {
   .my-skills-container {
     width: 110%;
   }
+
+  .my-skills-heading {
+    padding: 3rem;
+    font-size: 30px;
+  }
   .skill-names,
   .skill-stars {
     font-size: 8px;
     padding: 0;
     flex: 50%;
   }
-  .skill-stars i{
+  .skill-stars i {
     padding: 0.2rem 0;
   }
   .skill-levels {
@@ -268,7 +274,7 @@ nav a {
   padding: 0 2rem;
   color: #000;
   font-family: poppins;
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
 }
@@ -291,13 +297,14 @@ nav a {
   }
   .my-education-heading {
     padding: 3rem;
+    font-size: 30px;
   }
 
-  .education-grade{
+  .education-grade {
     display: none;
   }
 
-  .education-status{
+  .education-status {
     font-weight: 600;
   }
 }
@@ -313,7 +320,7 @@ nav a {
 .footer-left {
   display: flex;
   flex-direction: column;
-  font-size: 32px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 121.5%;
